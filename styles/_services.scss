@@ -1,0 +1,114 @@
+.services {
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+
+    &-item {
+      width: 100%;
+      border: var(--border);
+      border-radius: 50px;
+      box-shadow: 0 5px 0 var(--color-dark-alternate);
+      padding: 50px;
+      display: grid;
+      row-gap: 100px;
+      grid-template-columns: 1fr auto;
+
+      &-title {
+        font-size: 30px;
+        display: inline;
+        font-weight: 700;
+        line-height: 1.2;
+        border-radius: 8px;
+        box-decoration-break: clone;
+        padding-inline: 5px;
+      }
+
+      &-link {
+        position: relative;
+        font-size: 20px;
+        padding-left: 52px;
+
+        &:before {
+          content: '';
+          display: block;
+          position: absolute;
+          width: 40px;
+          aspect-ratio: 1;
+          border-radius: 50%;
+          top: -8px;
+          left: 0;
+        }
+
+        &:after {
+          content: 'Learn more';
+          display: block;
+        }
+      }
+
+      &-image {
+        grid-row: span 2;
+      }
+
+      &.gray {
+        background: var(--color-gray);
+
+        .services__list-item-title {
+          background: var(--color-green);
+        }
+
+        .services__list-item-link {
+          color: var(--color-dark-alternate);
+
+          &:before {
+            background:
+                    url('../images/icons/arrow_green.svg')
+                    currentColor
+                    no-repeat
+                    center;
+          }
+        }
+      }
+
+      &.green {
+        background: var(--color-green);
+
+        .services__list-item-title {
+          background: var(--color-gray);
+        }
+
+        .services__list-item-link {
+          color: var(--color-dark-alternate);
+
+          &:before {
+            background:
+                    url('../images/icons/arrow_green.svg')
+                    currentColor
+                    no-repeat
+                    center;
+          }
+        }
+      }
+
+      &.dark {
+        background: var(--color-dark-alternate);
+
+        .services__list-item-title {
+          background: var(--color-gray);
+        }
+
+        .services__list-item-link {
+          color: var(--color-gray);
+
+          &:before {
+            background:
+                    url('../images/icons/arrow_dark.svg')
+                    currentColor
+                    no-repeat
+                    center;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,119 @@
+.testimonials {
+  &__list {
+    display: flex;
+    gap: 50px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch;
+    padding-inline: 50px;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    &-outer {
+      background-color: var(--color-dark-alternate);
+      border-radius: 50px;
+      padding-top: 80px;
+      padding-bottom: 60px;
+    }
+
+    &-item {
+      scroll-snap-align: center;
+      width: 100%;
+      flex-shrink: 0;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+
+      &-comment {
+        --border: 1px solid var(--color-green);
+        border: var(--border);
+        border-radius: 50px;
+        position: relative;
+        padding: 50px;
+
+        &::after {
+          border-bottom: var(--border);
+          border-right: var(--border);
+          background-color: var(--color-dark-alternate);
+          width: 40px;
+          aspect-ratio: 1;
+          content: "";
+          display: block;
+          position: absolute;
+          bottom: 0;
+          left: 60px;
+          rotate: 45deg;
+          transform-origin: 0 100%;
+          translate: 0 1px;
+        }
+
+        p {
+          color: var(--color-light);
+          font-size: 18px;
+        }
+      }
+
+      &-author {
+        margin-left: 90px;
+
+        &-name {
+          font-size: 20px;
+          color: var(--color-green);
+        }
+        &-role {
+          font-size: 18px;
+          color: var(--color-light);
+        }
+      }
+    }
+
+    &-pagination {
+      margin-top: 120px;
+      display: flex;
+      max-width: 570px;
+      flex-grow: 1;
+
+      &-outer {
+        display: flex;
+        justify-content: center;
+        padding-inline: 20px;
+      }
+
+      &-button {
+        width: 40px;
+        padding: 10px;
+        background: url('../images/icons/arrow_gray.svg') no-repeat center;
+
+        &.right {
+          rotate: 180deg;
+        }
+      }
+
+      &-list {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+
+        &-item {
+          display: contents;
+
+          &-button {
+            width: 34px;
+            padding: 10px;
+            aspect-ratio: 1;
+            background: url('../images/icons/white_star.svg') no-repeat center;
+
+            &.selected {
+              background: url('../images/icons/green_star.svg') no-repeat center;
+            }
+          }
+        }
+      }
+    }
+  }
+}

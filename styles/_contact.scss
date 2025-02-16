@@ -1,0 +1,39 @@
+.contact {
+  margin-top: 120px;
+  display: flex;
+  background: var(--color-gray);
+  border-radius: 50px;
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    padding: 50px 0 50px 50px;
+    flex-shrink: 1;
+
+    &-text {
+      font-weight: 700;
+      font-size: 30px;
+      background: none;
+      padding: 0;
+    }
+
+    &-desc {
+      font-size: 18px;
+      max-width: 500px;
+    }
+
+    &-button {
+      align-self: flex-start;
+    }
+  }
+
+  &__image {
+    min-width: 250px;
+    flex-shrink: 1;
+    flex-grow: 1;
+    margin: -20px 20px;
+    background: url('../images/contact.svg') no-repeat center;
+    background-size: contain;
+  }
+}
