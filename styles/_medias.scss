@@ -630,3 +630,11 @@
     white-space: wrap;
   }
 }
+
+@media (hover: hover) {
+  .button {
+    &:hover {
+      scale: 1.03;
+    }
+  }
+}

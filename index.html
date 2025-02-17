@@ -56,20 +56,37 @@
                     alt=""
                     src="images/icons/banner/megafon.svg"
             >
-            <div class="banner__megafon-link-list">
-                <a class="banner__megafon-link" href="#"></a>
-                <a class="banner__megafon-link" href="#"></a>
-                <a class="banner__megafon-link" href="#"></a>
-                <a class="banner__megafon-link" href="#"></a>
-            </div>
-            <div class="banner__megafon-decor-list">
-                <div class="banner__megafon-decor"></div>
-                <div class="banner__megafon-decor"></div>
-                <div class="banner__megafon-decor"></div>
-                <div class="banner__megafon-decor"></div>
-                <div class="banner__megafon-decor"></div>
-                <div class="banner__megafon-decor"></div>
-            </div>
+            <ul class="banner__megafon-link-list">
+                <li class="banner__megafon-link-item">
+                    <a class="banner__megafon-link" href="#">
+                        <label class="visually-hidden">Like</label>
+                    </a>
+                </li>
+                <li class="banner__megafon-link-item">
+                    <a class="banner__megafon-link" href="#">
+                        <label class="visually-hidden">Share</label>
+                    </a>
+                </li>
+                <li class="banner__megafon-link-item">
+                    <a class="banner__megafon-link" href="#">
+                        <label class="visually-hidden">Play</label>
+                    </a>
+                </li>
+                <li class="banner__megafon-link-item">
+                    <a class="banner__megafon-link" href="#">
+                        <label class="visually-hidden">Map</label>
+                    </a>
+                </li>
+
+            </ul>
+            <ul class="banner__megafon-decor-list">
+                <li class="banner__megafon-decor"></li>
+                <li class="banner__megafon-decor"></li>
+                <li class="banner__megafon-decor"></li>
+                <li class="banner__megafon-decor"></li>
+                <li class="banner__megafon-decor"></li>
+                <li class="banner__megafon-decor"></li>
+            </ul>
         </div>
         <p class="banner__subtitle">
             Our digital marketing agency helps businesses
@@ -91,42 +108,42 @@
                     <img
                             class="banner__partners-item-image"
                             src="images/partners/amazon.svg"
-                            alt = ""
+                            alt = "Amazon"
                     >
                 </li>
                 <li class="banner__partners-item">
                     <img
                             class="banner__partners-item-image"
                             src="images/partners/dribbble.svg"
-                            alt = ""
+                            alt = "Dribbble"
                     >
                 </li>
                 <li class="banner__partners-item">
                     <img
                             class="banner__partners-item-image"
                             src="images/partners/hubspot.svg"
-                            alt = ""
+                            alt = "HubSpot"
                     >
                 </li>
                 <li class="banner__partners-item">
                     <img
                             class="banner__partners-item-image"
                             src="images/partners/notion.svg"
-                            alt = ""
+                            alt = "Notion"
                     >
                 </li>
                 <li class="banner__partners-item">
                     <img
                             class="banner__partners-item-image"
                             src="images/partners/netflix.svg"
-                            alt = ""
+                            alt = "Netflix"
                     >
                 </li>
                 <li class="banner__partners-item">
                     <img
                             class="banner__partners-item-image"
                             src="images/partners/zoom.svg"
-                            alt = ""
+                            alt = "Zoom"
                     >
                 </li>
             </ul>
@@ -156,7 +173,7 @@
                         src="images/services/1.svg"
                         alt=""
                 >
-                <a href="#" class="services__list-item-link"></a>
+                <a href="#" class="services__list-item-link">Learn more</a>
             </li>
             <li class="services__list-item green">
                 <div class="services__list-item-title-outer">
@@ -169,7 +186,7 @@
                         src="images/services/2.svg"
                         alt=""
                 >
-                <a href="#" class="services__list-item-link"></a>
+                <a href="#" class="services__list-item-link">Learn more</a>
             </li>
             <li class="services__list-item dark">
                 <div class="services__list-item-title-outer">
@@ -182,7 +199,7 @@
                         src="images/services/3.svg"
                         alt=""
                 >
-                <a href="#" class="services__list-item-link"></a>
+                <a href="#" class="services__list-item-link">Learn more</a>
             </li>
             <li class="services__list-item gray">
                 <div class="services__list-item-title-outer">
@@ -195,7 +212,7 @@
                         src="images/services/4.svg"
                         alt=""
                 >
-                <a href="#" class="services__list-item-link"></a>
+                <a href="#" class="services__list-item-link">Learn more</a>
             </li>
             <li class="services__list-item green">
                 <div class="services__list-item-title-outer">
@@ -208,7 +225,7 @@
                         src="images/services/5.svg"
                         alt=""
                 >
-                <a href="#" class="services__list-item-link"></a>
+                <a href="#" class="services__list-item-link">Learn more</a>
             </li>
             <li class="services__list-item dark">
                 <div class="services__list-item-title-outer">
@@ -221,7 +238,7 @@
                         src="images/services/6.svg"
                         alt=""
                 >
-                <a href="#" class="services__list-item-link"></a>
+                <a href="#" class="services__list-item-link">Learn more</a>
             </li>
         </ul>
     </section>
@@ -669,7 +686,7 @@
                                 Say Hi
                             </label>
                             <input
-                                    class="radio__input"
+                                    class="radio__input visually-hidden"
                                     name="message-type"
                                     value="say-hi"
                                     type="radio"
@@ -685,7 +702,7 @@
                                 Get a Quote
                             </label>
                             <input
-                                    class="radio__input"
+                                    class="radio__input visually-hidden"
                                     name="message-type"
                                     value="gat-a-quote"
                                     type="radio"
@@ -706,6 +723,7 @@
                                 placeholder="Name"
                                 type="text"
                                 id="contact-us-name-input"
+                                required
                         >
                     </div>
                     <div class="contact-us__form-input input">
@@ -721,6 +739,7 @@
                                 placeholder="Email"
                                 type="email"
                                 id="contact-us-email-input"
+                                required
                         >
                     </div>
                     <div class="contact-us__form-textarea textarea">
@@ -735,6 +754,7 @@
                                 name="message"
                                 placeholder="Message"
                                 id="contact-us-message-textarea"
+                                required
                         ></textarea>
                     </div>
                 </div>
@@ -784,13 +804,19 @@
             </nav>
             <ul class="footer__social-list">
                 <li class="footer__social-list-item">
-                    <img class="footer__social-list-item-icon" src="images/icons/linked_in_white.svg" alt="LinkedIn">
+                    <a class="footer__social-list-item-link" href="#">
+                        <img class="footer__social-list-item-icon" src="images/icons/linked_in_white.svg" alt="LinkedIn">
+                    </a>
                 </li>
                 <li class="footer__social-list-item">
-                    <img class="footer__social-list-item-icon" src="images/icons/facebook_white.svg" alt="Facebook">
+                    <a class="footer__social-list-item-link" href="#">
+                        <img class="footer__social-list-item-icon" src="images/icons/facebook_white.svg" alt="Facebook">
+                    </a>
                 </li>
                 <li class="footer__social-list-item">
-                    <img class="footer__social-list-item-icon" src="images/icons/twitter_white.svg" alt="Twitter">
+                    <a class="footer__social-list-item-link" href="#">
+                        <img class="footer__social-list-item-icon" src="images/icons/twitter_white.svg" alt="Twitter">
+                    </a>
                 </li>
             </ul>
         </li>
@@ -816,6 +842,12 @@
             </div>
             <form class="footer__form" action="#" method="post">
                 <div class="footer__form-input input">
+                    <label
+                            class="input__label visually-hidden"
+                            for="footer-email-input"
+                    >
+                        Email
+                    </label>
                     <input
                             class="input__input"
                             name="email"

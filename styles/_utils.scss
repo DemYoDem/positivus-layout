@@ -13,6 +13,24 @@
   color: var(--color-dark);
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--color-green);
+  outline-offset: 3px;
+}
+
 .container {
   max-width: 1300px;
   margin-inline: auto;
@@ -31,6 +49,11 @@ img {
   padding-inline: 35px;
   font-size: 20px;
   cursor: pointer;
+  transition: scale .1s;
+
+  &:active {
+    scale: 0.97;
+  }
 
   &.transparent {
     border: var(--border);
@@ -116,8 +139,9 @@ img {
     }
   }
 
-  &__input {
-    display: none;
+  &:has(&__input:focus-visible) {
+    outline: 2px solid var(--color-green);
+    outline-offset: 5px;
   }
 
   &:has(&__input:checked) {

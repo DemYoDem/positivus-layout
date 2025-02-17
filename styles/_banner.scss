@@ -26,60 +26,62 @@
       border-radius: 50%;
       z-index: 1;
 
-      &:nth-child(1) {
-        width: 40.56%;
-        top: 0; left: 0;
-        transform: rotate(-5deg);
-        background:
-                url('../images/icons/banner/like.svg')
-                var(--color-dark)
-                no-repeat;
-        background-size: 55%;
-        background-position: center 60%;
-      }
-
-      &:nth-child(2) {
-        width: 37.22%;
-        top: 4%; right: 8%;
-        background:
-                url('../images/icons/banner/share.svg')
-                var(--color-green)
-                no-repeat;
-        background-size: 52%;
-        background-position: 45% 50%;
-      }
-
-      &:nth-child(3) {
-        width: 37.22%;
-        top: 39%; right: 12%;
-        transform: rotate(-11deg);
-        background:
-                url('../images/icons/banner/play.svg')
-                var(--color-dark)
-                no-repeat;
-        background-size: 47%;
-        background-position: 65% 50%;
-      }
-
-      &:nth-child(4) {
-        width: 42.78%;
-        top: 72%; right: 18%;
-        transform: rotate(4deg);
-        border: var(--border);
-        border-width: 2px;
-        background:
-                url('../images/icons/banner/map.svg')
-                var(--color-green)
-                no-repeat;
-        background-size: 57%;
-        background-position: 50% 60%;
-      }
-
       &-list {
         width: 30%;
         aspect-ratio: 0.6;
         position: absolute;
         top: 0; right: 0;
+      }
+
+      &-item {
+        &:nth-child(1) .banner__megafon-link {
+          width: 40.56%;
+          top: 0; left: 0;
+          transform: rotate(-5deg);
+          background:
+                  url('../images/icons/banner/like.svg')
+                  var(--color-dark)
+                  no-repeat;
+          background-size: 55%;
+          background-position: center 60%;
+        }
+
+        &:nth-child(2) .banner__megafon-link {
+          width: 37.22%;
+          top: 4%; right: 8%;
+          background:
+                  url('../images/icons/banner/share.svg')
+                  var(--color-green)
+                  no-repeat;
+          background-size: 52%;
+          background-position: 45% 50%;
+        }
+
+        &:nth-child(3) .banner__megafon-link {
+          width: 37.22%;
+          top: 39%; right: 12%;
+          transform: rotate(-11deg);
+          background:
+                  url('../images/icons/banner/play.svg')
+                  var(--color-dark)
+                  no-repeat;
+          background-size: 47%;
+          background-position: 65% 50%;
+        }
+
+        &:nth-child(4) .banner__megafon-link {
+          width: 42.78%;
+          top: 72%; right: 18%;
+          transform: rotate(4deg);
+          border: var(--border);
+          border-width: 2px;
+          background:
+                  url('../images/icons/banner/map.svg')
+                  var(--color-green)
+                  no-repeat;
+          background-size: 57%;
+          background-position: 50% 60%;
+        }
       }
     }
 
