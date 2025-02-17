@@ -40,6 +40,7 @@
             border-radius: 50%;
             background: url('../images/icons/plus.svg') var(--color-gray) no-repeat center;
             margin-inline: 30px;
+            flex-shrink: 0;
           }
         }
       }

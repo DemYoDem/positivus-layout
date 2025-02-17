@@ -499,6 +499,9 @@
   }
 
   .footer {
+    border-radius: 0;
+    width: 100%;
+
     &__nav-list {
       flex-direction: column;
       align-items: center;
@@ -566,5 +569,64 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 429px) {
+  .services {
+    &__list-item {
+      padding: 30px;
+    }
+  }
+
+  .contact {
+    &__title {
+      padding: 30px;
+    }
+  }
+
+  .case {
+    &__list-item {
+      padding: 30px;
+      width: calc(100vw - 60px);
+      min-width: auto;
+    }
+  }
+
+  .work {
+    &__list-item-details-summary::before {
+      padding: 20px;
+    }
+  }
+
+  .team {
+    &__list-item {
+      padding: 20px;
+    }
+  }
+
+  .testimonials {
+    &__list {
+      padding-inline: 20px;
+
+      &-outer {
+        padding-block: 20px;
+      }
+
+      &-item {
+        &-comment {
+          padding: 25px;
+        }
+      }
+
+      &-pagination {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .button {
+    padding-inline: 10px;
+    white-space: wrap;
   }
 }

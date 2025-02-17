@@ -96,17 +96,19 @@ img {
       border-radius: 50%;
       border: var(--border);
       background: var(--color-light);
+      flex-shrink: 0;
     }
 
     &::after {
       position: absolute;
-      left: 0;
+      margin-block: auto;
+      left: 6.5px;
       top: 0;
-      translate: 7px 7px;
+      bottom: 0;
       display: block;
       content: "";
       width: 16px;
-      aspect-ratio: 1;
+      height: 16px;
       border-radius: 50%;
       background: var(--color-green);
       scale: 0;
