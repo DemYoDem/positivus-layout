@@ -347,8 +347,12 @@
 
             &-button {
               width: 30px;
-              background-size: 50% !important;
               margin-right: 30px;
+
+              &::before,
+              &::after {
+                background-size: 50%;
+              }
             }
           }
         }
@@ -450,10 +454,7 @@
         &-link {
           align-self: end;
           margin-bottom: 30px;
-
-          &:after {
-            display: none;
-          }
+          font-size: 0;
         }
 
         &-image {
@@ -595,7 +596,7 @@
 
   .work {
     &__list-item-details-summary::before {
-      padding: 20px;
+      padding: 30px 20px;
     }
   }
 

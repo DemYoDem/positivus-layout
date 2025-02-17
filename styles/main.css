@@ -1366,8 +1366,10 @@ main {
   }
   .work__list-item-details-summary-button {
     width: 30px;
-    background-size: 50% !important;
     margin-right: 30px;
+  }
+  .work__list-item-details-summary-button::before, .work__list-item-details-summary-button::after {
+    background-size: 50%;
   }
   .work__list-item-content-body-paragraph {
     font-size: 16px;
@@ -1435,9 +1437,7 @@ main {
   .services__list-item-link {
     align-self: end;
     margin-bottom: 30px;
-  }
-  .services__list-item-link:after {
-    display: none;
+    font-size: 0;
   }
   .services__list-item-image {
     max-width: 165px;
@@ -1530,7 +1530,7 @@ main {
     min-width: auto;
   }
   .work__list-item-details-summary::before {
-    padding: 20px;
+    padding: 30px 20px;
   }
   .team__list-item {
     padding: 20px;
