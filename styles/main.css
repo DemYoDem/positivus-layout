@@ -280,6 +280,7 @@ main {
   position: absolute;
   top: 2%;
   left: 23%;
+  animation: banner__megafon--appearance 0.8s 0.5s both;
 }
 .banner__megafon-link {
   position: absolute;
@@ -302,6 +303,7 @@ main {
   background: url("../images/icons/banner/like.svg") var(--color-dark) no-repeat;
   background-size: 55%;
   background-position: center 60%;
+  animation: banner__like--appearance 0.8s 0.8s both;
 }
 .banner__megafon-link-item:nth-child(2) .banner__megafon-link {
   width: 37.22%;
@@ -310,6 +312,7 @@ main {
   background: url("../images/icons/banner/share.svg") var(--color-green) no-repeat;
   background-size: 52%;
   background-position: 45% 50%;
+  animation: banner__share--appearance 0.8s 0.9s both;
 }
 .banner__megafon-link-item:nth-child(3) .banner__megafon-link {
   width: 37.22%;
@@ -319,6 +322,7 @@ main {
   background: url("../images/icons/banner/play.svg") var(--color-dark) no-repeat;
   background-size: 47%;
   background-position: 65% 50%;
+  animation: banner__play--appearance 0.8s 1s both;
 }
 .banner__megafon-link-item:nth-child(4) .banner__megafon-link {
   width: 42.78%;
@@ -330,6 +334,7 @@ main {
   background: url("../images/icons/banner/map.svg") var(--color-green) no-repeat;
   background-size: 57%;
   background-position: 50% 60%;
+  animation: banner__map--appearance 0.8s 1.1s both;
 }
 .banner__megafon-decor {
   position: absolute;
@@ -341,6 +346,7 @@ main {
   left: 10%;
   background: var(--color-dark);
   border-radius: 50%;
+  animation: banner__decor--appearance 0.8s 1.8s both;
 }
 .banner__megafon-decor:nth-child(2) {
   width: 5.16%;
@@ -348,6 +354,7 @@ main {
   left: 20%;
   background: var(--color-green);
   border-radius: 50%;
+  animation: banner__decor--appearance 0.8s 1.9s both;
 }
 .banner__megafon-decor:nth-child(3) {
   width: 3.33%;
@@ -355,6 +362,7 @@ main {
   left: 70%;
   background: var(--color-green);
   border-radius: 50%;
+  animation: banner__decor--appearance 0.8s 2.6s both;
 }
 .banner__megafon-decor:nth-child(4) {
   width: 11.67%;
@@ -362,7 +370,8 @@ main {
   left: 13%;
   background: url("../images/icons/banner/star.svg") center no-repeat;
   background-size: 100%;
-  transform: rotate(45deg);
+  rotate: 45deg;
+  animation: banner__decor--appearance2 0.8s 2.2s both;
 }
 .banner__megafon-decor:nth-child(5) {
   width: 5.83%;
@@ -370,9 +379,10 @@ main {
   left: 50%;
   background: url("../images/icons/banner/star.svg") center no-repeat;
   background-size: 100%;
+  animation: banner__decor--appearance 0.8s 2.4s both;
 }
 .banner__megafon-decor:nth-child(6) {
-  transform: rotate(30deg);
+  rotate: 30deg;
   width: 94.33%;
   aspect-ratio: 4.8;
   top: 52%;
@@ -380,6 +390,7 @@ main {
   border: var(--border);
   border-radius: 50%;
   z-index: -1;
+  animation: banner__circles--appearance 0.8s 0.8s both;
 }
 .banner__megafon-decor:nth-child(6):before, .banner__megafon-decor:nth-child(6):after {
   position: absolute;
@@ -392,9 +403,11 @@ main {
 }
 .banner__megafon-decor:nth-child(6):before {
   top: -40%;
+  animation: banner__circles--appearance 0.8s 1s both;
 }
 .banner__megafon-decor:nth-child(6):after {
   top: -80%;
+  animation: banner__circles--appearance 0.8s 1.3s both;
 }
 .banner__megafon-decor-list {
   position: absolute;
@@ -1542,6 +1555,55 @@ main {
 @media (hover: hover) {
   .button:hover {
     scale: 1.03;
+  }
+}
+@keyframes banner__megafon--appearance {
+  from {
+    scale: 0.5;
+    rotate: -45deg;
+    opacity: 0;
+  }
+}
+@keyframes banner__circles--appearance {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+}
+@keyframes banner__like--appearance {
+  from {
+    transform: translate(-50px, 50px);
+    opacity: 0;
+  }
+}
+@keyframes banner__share--appearance {
+  from {
+    transform: translate(-65px, 35px);
+    opacity: 0;
+  }
+}
+@keyframes banner__play--appearance {
+  from {
+    transform: translate(-65px, 10px);
+    opacity: 0;
+  }
+}
+@keyframes banner__map--appearance {
+  from {
+    transform: translate(-65px, -20px);
+    opacity: 0;
+  }
+}
+@keyframes banner__decor--appearance {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+}
+@keyframes banner__decor--appearance2 {
+  from {
+    transform: translate(40px, 40px);
+    opacity: 0;
   }
 }
 

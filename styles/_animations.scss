@@ -1,0 +1,56 @@
+@keyframes banner__megafon--appearance {
+  from {
+    scale: .5;
+    rotate: -45deg;
+    opacity: 0;
+  }
+}
+
+@keyframes banner__circles--appearance {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+}
+
+@keyframes banner__like--appearance {
+  from {
+    transform: translate(-50px, 50px);
+    opacity: 0;
+  }
+}
+
+@keyframes banner__share--appearance {
+  from {
+    transform: translate(-65px, 35px);
+    opacity: 0;
+  }
+}
+
+@keyframes banner__play--appearance {
+  from {
+    transform: translate(-65px, 10px);
+    opacity: 0;
+  }
+}
+
+@keyframes banner__map--appearance {
+  from {
+    transform: translate(-65px, -20px);
+    opacity: 0;
+  }
+}
+
+@keyframes banner__decor--appearance {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+}
+
+@keyframes banner__decor--appearance2 {
+  from {
+    transform: translate(40px, 40px);
+    opacity: 0;
+  }
+}

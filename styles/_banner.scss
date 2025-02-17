@@ -18,6 +18,7 @@
       aspect-ratio: 1;
       position: absolute;
       top: 2%; left: 23%;
+      animation: banner__megafon--appearance .8s .5s both;
     }
 
     &-link {
@@ -44,6 +45,7 @@
                   no-repeat;
           background-size: 55%;
           background-position: center 60%;
+          animation: banner__like--appearance .8s .8s both;
         }
 
         &:nth-child(2) .banner__megafon-link {
@@ -55,6 +57,7 @@
                   no-repeat;
           background-size: 52%;
           background-position: 45% 50%;
+          animation: banner__share--appearance .8s .9s both;
         }
 
         &:nth-child(3) .banner__megafon-link {
@@ -67,6 +70,7 @@
                   no-repeat;
           background-size: 47%;
           background-position: 65% 50%;
+          animation: banner__play--appearance .8s 1s both;
         }
 
         &:nth-child(4) .banner__megafon-link {
@@ -81,6 +85,7 @@
                   no-repeat;
           background-size: 57%;
           background-position: 50% 60%;
+          animation: banner__map--appearance .8s 1.1s both;
         }
       }
     }
@@ -94,6 +99,7 @@
         top: 5%; left: 10%;
         background: var(--color-dark);
         border-radius: 50%;
+        animation: banner__decor--appearance .8s 1.8s both;
       }
 
       &:nth-child(2) {
@@ -101,6 +107,7 @@
         top: 14%; left: 20%;
         background: var(--color-green);
         border-radius: 50%;
+        animation: banner__decor--appearance .8s 1.9s both;
       }
 
       &:nth-child(3) {
@@ -108,6 +115,7 @@
         top: 85%; left: 70%;
         background: var(--color-green);
         border-radius: 50%;
+        animation: banner__decor--appearance .8s 2.6s both;
       }
 
       &:nth-child(4) {
@@ -115,7 +123,8 @@
         top: 65%; left: 13%;
         background: url('../images/icons/banner/star.svg') center no-repeat;
         background-size: 100%;
-        transform: rotate(45deg);
+        rotate: 45deg;
+        animation: banner__decor--appearance2 .8s 2.2s both;
       }
 
       &:nth-child(5) {
@@ -123,16 +132,18 @@
         top: 86%; left: 50%;
         background: url('../images/icons/banner/star.svg') center no-repeat;
         background-size: 100%;
+        animation: banner__decor--appearance .8s 2.4s both;
       }
 
       &:nth-child(6) {
-        transform: rotate(30deg);
+        rotate: 30deg;
         width: 94.33%;
         aspect-ratio: 4.8;
         top: 52%; left: -2%;
         border: var(--border);
         border-radius: 50%;
         z-index: -1;
+        animation: banner__circles--appearance .8s .8s both;
 
         &:before,
         &:after {
@@ -147,9 +158,11 @@
 
         &:before {
           top: -40%;
+          animation: banner__circles--appearance .8s 1s both;
         }
         &:after {
           top: -80%;
+          animation: banner__circles--appearance .8s 1.3s both;
         }
       }
 
