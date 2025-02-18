@@ -940,6 +940,7 @@ main {
   padding-inline: 20px;
 }
 .testimonials__list-pagination-button {
+  cursor: pointer;
   width: 40px;
   padding: 10px;
   background: url("../images/icons/arrow_gray.svg") no-repeat center;
@@ -956,6 +957,7 @@ main {
   display: contents;
 }
 .testimonials__list-pagination-list-item-button {
+  cursor: pointer;
   width: 34px;
   padding: 10px;
   aspect-ratio: 1;

@@ -85,6 +85,7 @@
       }
 
       &-button {
+        cursor: pointer;
         width: 40px;
         padding: 10px;
         background: url('../images/icons/arrow_gray.svg') no-repeat center;
@@ -103,6 +104,7 @@
           display: contents;
 
           &-button {
+            cursor: pointer;
             width: 34px;
             padding: 10px;
             aspect-ratio: 1;
